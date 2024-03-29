@@ -1,4 +1,5 @@
 FROM registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
+LABEL org.opencontainers.image.source="https://github.com/hyvedata/dbt-athena-cicd"
 RUN apt update && apt upgrade -y 
 RUN apt install software-properties-common -y
 RUN add-apt-repository ppa:deadsnakes/ppa
